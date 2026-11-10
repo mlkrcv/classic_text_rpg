@@ -1,0 +1,17 @@
+This is a first version of a classic text-based RPG. In this game You can:
+
+Explore, fight, level up and more!
+
+IMPORTANT:
+
+The "Explore" feature has 3 options. Fight, Found something and Nothing happened. Sometimes You want to press "Explore" a couple times...
+
+HOW TO PLAY:
+
+1. Open "Classic RPG" folder
+
+2. Choose "game.py"
+
+3. Launch and enjoy!
+
+(checked on Python 3.14.7)
