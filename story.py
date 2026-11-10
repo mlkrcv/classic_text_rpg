@@ -27,7 +27,7 @@ INTRO_2 = """
 
 INTRO_3 = """
 |---------------------------------------------|
-| You wake up on a meadow                     |
+| You wake up in the middle of a meadow       |
 |                                             |
 | You can't remember much from the past night |
 |                                             |
