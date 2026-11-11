@@ -13,3 +13,11 @@ def test_use_healing_potion_heals_and_remove_it():
     assert result is True
     assert player.health_points == player.max_health_points
     assert potion not in player.inventory
+
+
+def test_player_has_no_healing_potion():
+    player = characters.Player()
+
+    result = player.use_healing_potion()
+
+    assert result is False
