@@ -1,5 +1,6 @@
 import characters
 import items
+import locations
 
 
 def test_use_healing_potion_heals_and_remove_it():
@@ -21,3 +22,15 @@ def test_player_has_no_healing_potion():
     result = player.use_healing_potion()
 
     assert result is False
+
+
+def test_world_resets():
+    locations.forest.visited = True
+    locations.mountain.locked = False
+    locations.forest_lake.connected_locations.append(locations.secret_location)
+
+    locations.reset_world()
+
+    assert not locations.forest.visited
+    assert locations.mountain.locked
+    assert locations.secret_location not in locations.forest_lake.connected_locations
