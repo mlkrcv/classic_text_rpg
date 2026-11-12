@@ -3,6 +3,15 @@ import items
 import locations
 
 
+import pytest
+
+@pytest.fixture(autouse=True)
+def clean_world():
+    locations.reset_world()
+    yield
+    locations.reset_world()
+
+
 def test_use_healing_potion_heals_and_remove_it():
     player = characters.Player()
     potion = items.HealingPotion()
